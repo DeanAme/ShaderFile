@@ -1,3 +1,2 @@
 # ShaderFile
-Including the glass shader, 3ColShader, ScalingShader, WaterShader.
-Using CG
+Including the glass shader, 3ColShader, ScalingShader, WaterShader...
