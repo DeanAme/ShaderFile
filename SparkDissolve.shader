@@ -72,7 +72,6 @@ Shader "Particles/VertexSpikeDissolve"
 					v.vertex.xyz += step(_Cutoff, noise.r) * (v.normal * _Spike);// 顶点加上法线上碰撞距离乘以0/1；这个由是否超过切断阈值决定
 //#endif		
 					//v.vertex.xyz += (v.normal *  (v.uv.z)) * _Growth;// increase overall size over particle age
-					//TODO:为啥一定要转到裁剪空间
 					o.vertex = TransformObjectToHClip(v.vertex.xyz);
 					o.uv.z = v.uv.z - _Delay;//减去一定的生命周期，总之就是开放给美术控制的
 					o.color = v.color;			
